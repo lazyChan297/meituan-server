@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start process.prod.json --no-daemon",
+    "local-dev": "nodemon --config nodemon.json app.js",
+    "initdb": "npm install && node tools/initdb.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "http-server": "^0.11.1",
+    "https": "^1.0.0",
+    "knex": "^0.13.0",
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^3.2.0",
+    "koa-log4": "^2.1.0",
+    "koa-router": "^7.0.1",
+    "lodash": "^4.17.4",
+    "mkdir-p": "0.0.7",
+    "mysql": "^2.14.1",
+    "nodemon": "^1.18.3",
+    "pify": "^2.3.0",
+    "wafer-node-sdk": "^1.4.5"
+  }
+}
